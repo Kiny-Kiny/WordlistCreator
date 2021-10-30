@@ -1,10 +1,11 @@
-# Autor    : Kiny
-# Pix      : (61) 9603-5417
-# Github   : https://github.com/Kiny-Kiny
-# WhatsApp : http://wa.me/552179180533
-# Telegram : @K_iny
-# Instagram: @parziovanni
-# Twitter  : @KinyBruno
+# Recomendação : Use apenas se seu computador/celular for bom.
+# Autor        : Kiny
+# Pix          : (61) 9603-5417
+# Github       : https://github.com/Kiny-Kiny
+# WhatsApp     : http://wa.me/552179180533
+# Telegram     : @K_iny
+# Instagram    : @parziovanni
+# Twitter      : @KinyBruno
 ############################################
 '''Módulos'''
 from itertools import product;
@@ -35,12 +36,10 @@ logo=B+'''  __  __     __     __   __     __  __
 ############################################
 '''Parte de criação da Wordlist'''
 def wordlist(i):
-	msg=''
-	res = product('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_1234567890', repeat=i)
+	msg='';res = product('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_1234567890', repeat=i);
 	for g in res:
 		senha=''
-		for i in g:
-			senha+=i
+		for i in g: senha+=i
 		msg+=f'{senha}\n'
 	return msg
 
@@ -49,19 +48,15 @@ def main(min,max):
 	slow(
 	f'[{G}!{C}] Criando a WordList...\n'
 	)
-	for i in range(int(min),int(max)):
-		a=wordlist(i)
-		a=str(a)
-		lis.append(a)
-	msg=''
-	for i in lis:
-		msg+=i
+	for i in range(int(min),int(max)): lis.append(str(wordlist(i)));
+	msg='';
+	for i in lis: msg+=i
 	file=open('KingCrimson.txt','w+');
 	file.write(msg);
 	file.close();
 	clear();
 	slow(
-	f'{logo}\n[{G}Wordilist Criada!{C}] A wordlist foi criada e salva no arquivo KingCrimson.txt\n'
+	f'{logo}\n[{G}Wordilist Criada!{C}] A worlist foi criada e salva no arquivo KingCrimson.txt\n'
 	);	
 
 ############################################
