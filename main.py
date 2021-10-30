@@ -56,7 +56,7 @@ def main(min,max):
 	file.close();
 	clear();
 	slow(
-	f'{logo}\n[{G}Wordilist Criada!{C}] A worlist foi criada e salva no arquivo KingCrimson.txt\n'
+	f'{logo}\n[{G}Wordlist Criada!{C}] A wordlist foi criada e salva no arquivo KingCrimson.txt\n'
 	);	
 
 ############################################
